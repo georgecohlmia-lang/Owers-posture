@@ -2,87 +2,87 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Your Two Decisions — FoundersPath</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<title>Your Two Decisions — Two Weeks Out</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --ink: #1a2326; --ink-soft: #374151; --muted: #6b7280; --muted-soft: #9ca3af;
-    --border: #e5e7eb; --border-soft: #f1f3f5;
-    --bg: #ffffff; --bg-soft: #fafaf7;
-    --green: #0f7a4f; --bright: #3dbe7c; --em-soft: #e8f1ec;
-    --cream-soft: #f5efe0; --amber: #b07d3a;
-    --danger: #c46b6b; --danger-soft: #f6e2e2;
-    --font-display: 'Source Serif 4', Georgia, serif;
-    --font-body: 'Inter', system-ui, sans-serif;
+  :root{
+    --ink:#10131a; --ink-soft:#10131a; --muted:#59616e; --muted-soft:#9ba3af;
+    --border:#e9ecf5; --border-soft:#e9ecf5;
+    --bg:#ffffff; --bg-soft:#fbfaf6;
+    --green:#2747f5; --bright:#2747f5; --em-soft:#e9ecf5;
+    --cream-soft:#e9ecf5; --amber:#7d5300;
+    --danger:#b3261e; --danger-soft:#fde9e7;
+    --font-display:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --font-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
-  body { font-family: var(--font-body); color: var(--ink); background: var(--bg-soft); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  body { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; color: var(--ink); background: var(--bg-soft); line-height: 1.55; -webkit-font-smoothing: antialiased; }
   .sheet { max-width: 880px; margin: 0 auto; padding: 56px 48px 80px; background: var(--bg); }
   header.brand { border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 34px; }
   .eyebrow { font-size: 11px; letter-spacing: 2.5px; color: var(--green); font-weight: 600; text-transform: uppercase; margin: 0 0 6px; }
-  h1 { font-family: var(--font-display); font-size: 32px; line-height: 1.2; color: var(--ink); margin: 0 0 8px; font-weight: 600; }
-  .lede { font-family: var(--font-display); font-style: italic; color: var(--ink-soft); font-size: 16px; margin: 0; }
+  h1 { font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif; font-size: 32px; line-height: 1.2; color: var(--ink); margin: 0 0 8px;font-weight:800;letter-spacing:-.03em;font-style:normal;}
+  .lede { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal; color: var(--ink-soft); font-size: 16px; margin: 0; }
   .step { margin: 38px 0 0; padding-top: 26px; border-top: 1px solid var(--border); }
   .step:first-of-type { border-top: none; padding-top: 0; }
   .step-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 6px; }
-  .step-num { font-family: var(--font-display); font-size: 28px; font-weight: 600; color: var(--bright); line-height: 1; }
-  .step-title { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--ink); line-height: 1.25; }
+  .step-num { font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif; font-size: 28px;font-weight:800; color: var(--bright); line-height: 1;letter-spacing:-.03em;font-style:normal;}
+  .step-title { font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif; font-size: 22px;font-weight:800; color: var(--ink); line-height: 1.25;letter-spacing:-.03em;font-style:normal;}
   .step-sub { color: var(--muted); font-size: 14px; margin: 4px 0 18px; font-style: italic; }
   label { font-size: 13px; color: var(--ink-soft); font-weight: 500; display: block; margin-bottom: 5px; }
-  input[type="text"], input[type="number"], textarea { font-family: var(--font-body); font-size: 14px; color: var(--ink); background: white; border: 1px solid var(--border); border-radius: 4px; padding: 9px 11px; width: 100%; }
+  input[type="text"], input[type="number"], textarea { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 14px; color: var(--ink); background: white; border: 1px solid var(--border); border-radius:0; padding: 9px 11px; width: 100%; }
   input:focus, textarea:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 2px var(--em-soft); }
   textarea { resize: vertical; min-height: 70px; line-height: 1.5; }
   .field { margin-bottom: 14px; } .field:last-child { margin-bottom: 0; }
   .input-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .block-card { border: 1px solid var(--border); border-radius: 6px; padding: 16px 18px; margin-bottom: 12px; background: white; }
-  .block-name { font-family: var(--font-display); font-size: 17px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+  .block-card { border: 1px solid var(--border); border-radius:0; padding: 16px 18px; margin-bottom: 12px; background: white; }
+  .block-name { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 17px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
   .block-prompt { font-size: 13px; color: var(--muted); font-style: italic; margin: 0 0 12px; }
   .input-prefix { position: relative; }
   .input-prefix input { padding-left: 24px; }
   .input-prefix::before { content: "$"; position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 14px; pointer-events: none; }
-  .calc-row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 16px; padding: 10px 14px; background: var(--bg-soft); border-radius: 4px; margin-bottom: 6px; border-left: 3px solid var(--bright); }
+  .calc-row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 16px; padding: 10px 14px; background: var(--bg-soft); border-radius:0; margin-bottom: 6px; border-left: 3px solid var(--bright); }
   .calc-row.primary { border-left-color: var(--green); background: var(--em-soft); }
   .calc-row.primary .calc-value { color: var(--green); }
   .calc-row.warn { border-left-color: var(--danger); background: var(--danger-soft); }
   .calc-row.warn .calc-value { color: var(--danger); }
   .calc-label { font-size: 13px; color: var(--ink-soft); font-weight: 500; }
-  .calc-value { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .calc-value { font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif; font-size: 22px;font-weight:800; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap;letter-spacing:-.03em;font-style:normal;}
   .two-col-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .decision-card { border-radius: 6px; padding: 16px 18px; background: white; }
+  .decision-card { border-radius:0; padding: 16px 18px; background: white; }
   .decision-card.team { border: 1px solid var(--border); border-top: 4px solid var(--green); }
   .decision-card.household { border: 1px solid var(--border); border-top: 4px solid var(--amber); }
   .decision-card-tag { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; margin-bottom: 4px; }
   .decision-card.team .decision-card-tag { color: var(--green); }
   .decision-card.household .decision-card-tag { color: var(--amber); }
-  .decision-card-title { font-family: var(--font-display); font-size: 17px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+  .decision-card-title { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 17px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
   .output-section { margin-top: 48px; padding-top: 36px; border-top: 3px solid var(--ink); }
   .output-header { text-align: center; margin-bottom: 24px; }
   .output-header .eyebrow { color: var(--bright); }
-  .output-header h2 { font-family: var(--font-display); font-size: 26px; font-weight: 600; color: var(--ink); margin: 4px 0 6px; }
+  .output-header h2 { font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif; font-size: 26px;font-weight:800; color: var(--ink); margin: 4px 0 6px;letter-spacing:-.03em;font-style:normal;line-height:1.04;}
   .output-header p { color: var(--muted); font-size: 14px; margin: 0; font-style: italic; }
   .out-block { margin-bottom: 22px; page-break-inside: avoid; }
-  .out-block-title { font-family: var(--font-body); font-size: 11px; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 1.8px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
-  .summary-card { background: var(--bg-soft); border-left: 3px solid var(--bright); border-radius: 3px; padding: 12px 16px; margin-bottom: 10px; }
-  .summary-card-name { font-family: var(--font-display); font-size: 14px; font-weight: 600; color: var(--bright); margin-bottom: 6px; }
+  .out-block-title { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 11px; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 1.8px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  .summary-card { background: var(--bg-soft); border-left: 3px solid var(--bright); border-radius:0; padding: 12px 16px; margin-bottom: 10px; }
+  .summary-card-name { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 14px; font-weight: 600; color: var(--bright); margin-bottom: 6px; }
   .summary-card-body { font-size: 14px; color: var(--ink-soft); line-height: 1.5; white-space: pre-wrap; }
   .decisions-out-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .decision-out-card { background: var(--bg-soft); border-radius: 4px; padding: 14px 16px; }
+  .decision-out-card { background: var(--bg-soft); border-radius:0; padding: 14px 16px; }
   .decision-out-card.team { border-left: 4px solid var(--green); }
   .decision-out-card.household { border-left: 4px solid var(--amber); }
   .decision-out-tag { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; margin-bottom: 4px; }
   .decision-out-card.team .decision-out-tag { color: var(--green); }
   .decision-out-card.household .decision-out-tag { color: var(--amber); }
-  .decision-out-title { font-family: var(--font-display); font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+  .decision-out-title { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
   .decision-out-body { font-size: 13px; color: var(--ink-soft); line-height: 1.55; white-space: pre-wrap; }
-  .observation { margin-top: 24px; padding: 14px 18px; background: var(--em-soft); border-radius: 6px; font-size: 14px; color: var(--ink-soft); line-height: 1.55; }
+  .observation { margin-top: 24px; padding: 14px 18px; background: var(--em-soft); border-radius:0; font-size: 14px; color: var(--ink-soft); line-height: 1.55; }
   .observation strong { color: var(--green); }
-  .empty-output { padding: 36px; background: var(--bg-soft); border: 1px dashed var(--border); border-radius: 6px; text-align: center; color: var(--muted); font-style: italic; }
+  .empty-output { padding: 36px; background: var(--bg-soft); border: 1px dashed var(--border); border-radius:0; text-align: center; color: var(--muted); font-style: italic; }
   .toolbar { display: flex; gap: 10px; justify-content: flex-end; margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--border); }
-  .btn { font-family: var(--font-body); font-size: 13px; font-weight: 600; padding: 9px 18px; border-radius: 4px; cursor: pointer; border: 1px solid var(--border); background: white; color: var(--ink-soft); }
+  .btn { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 13px; font-weight: 600; padding: 9px 18px; border-radius:0; cursor: pointer; border: 1px solid var(--border); background: white; color: var(--ink-soft); }
   .btn:hover { background: var(--bg-soft); }
-  .btn-primary { background: var(--green); color: white; border-color: var(--green); } .btn-primary:hover { background: #0c6643; }
-  .btn-example { background: var(--cream-soft); color: var(--amber); border-color: var(--cream-soft); font-weight: 600; } .btn-example:hover { background: #ecdfbf; }
+  .btn-primary { background: var(--green); color: white;border-color:#ffffff; } .btn-primary:hover { background: #1b36c9; }
+  .btn-example { background: var(--cream-soft); color: var(--amber); border-color: var(--cream-soft); font-weight: 600; } .btn-example:hover { background: #d5d9e4; }
   .btn-ghost { color: var(--muted); }
   @media print {
     body { background: white; }
@@ -90,16 +90,28 @@
     .toolbar { display: none; }
     .step { page-break-inside: avoid; }
     .out-block { page-break-inside: avoid; }
-    input, textarea { border: none; border-bottom: 1px solid var(--border); border-radius: 0; padding: 4px 0; background: transparent; }
+    input, textarea { border: none; border-bottom: 1px solid var(--border); border-radius:0; padding: 4px 0; background: transparent; }
     .empty-output { display: none; }
   }
+
+/* Two Weeks Out module band, October 2026 system */
+.two-band{display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:center;padding:12px 24px;background:#7C97FF;color:#10131a;border-bottom:2px solid #10131a;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.two-band .two-wm{font-family:'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;font-size:17px;letter-spacing:-.03em;line-height:1;color:#10131a}
+.two-band .two-mod{font-family:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;line-height:1.3;color:#10131a}
+body{-webkit-font-smoothing:antialiased}
+@media print{.two-band{display:none !important}}
+/* shared touches, October 2026 system */
+button,select,optgroup,option{font-family:inherit}
+input[type=checkbox],input[type=radio],input[type=range]{accent-color:#2747f5}
+h1 em,h1 i{font-style:normal !important;font-weight:inherit !important;color:inherit !important;background:linear-gradient(#ff5a1f,#ff5a1f) left calc(100% - .04em)/100% .09em no-repeat;padding-bottom:.02em;-webkit-box-decoration-break:clone;box-decoration-break:clone;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 </style>
 </head>
 <body>
+<div class="two-band"><span class="two-wm">Two Weeks Out</span><span class="two-mod">09 / Build and Lead Your Team</span></div>
 <div class="sheet">
 
 <header class="brand">
-  <p class="eyebrow">FoundersPath  ·  Team Building and Leadership Development</p>
+  <p class="eyebrow">Two Weeks Out  ·  Team Building and Leadership Development</p>
   <h1>Your Two Decisions</h1>
   <p class="lede">When team compensation decisions and household cash flow are flowing through the same checking account, both decisions get worse. This worksheet separates them — honestly.</p>
   <div style="margin-top: 14px;">
